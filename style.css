@@ -10,6 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
 /* Left container NAV */
 .left-container {
     background-color: #217373;
@@ -87,3 +91,118 @@ li:hover {
 }
 
 /* Profile segment */
+.profile-info {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    height: 150px;
+    width: 100%;
+    background-color: #173540;
+}
+
+.search {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+input {
+    flex: 1;
+}
+input {
+    height: 26px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #217373cb;
+}
+
+.magnify {
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 300ms ease-out;
+}
+
+.magnify:hover {
+    transform: scale(1.1);
+}
+
+.profile-info-small {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-right: 100px;
+}
+
+.small-logo {
+    background-color: rgb(25, 25, 25);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.large-logo {
+    background-color: rgb(25, 25, 25);
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.profile-info-lg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    color: white;
+    font-weight: 500;
+    padding: 0px 15px;
+    letter-spacing: 2px;
+}
+
+.info-container {
+    font-weight: 400;
+}
+
+.info-container p {
+    opacity: 50%;
+    margin-bottom: 5px;
+}
+
+.info-container h2 {
+    font-size: 16px;
+}
+
+/* Profile Buttons */
+.profile-btns {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2em;
+    margin-right: 100px;
+}
+
+.profile-btns div {
+    background-color: #217373;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    transition: transform 300ms ease-out;
+}
+
+.profile-btns div:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
